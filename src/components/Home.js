@@ -10,7 +10,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: false
+      isLoading: false,
     }
   }
 
@@ -24,27 +24,31 @@ class Home extends Component {
       csv.parse(reader.result, (err, data) => {
 
         const burgerList = [];
-        let count = 0;
         for (let i = 0; i < data.length; i++) {
           const name = data[i][0];
           const size = data[i][1];
           const price = data[i][2];
           const newBurger = { "Name": name, "Size": size, "Price": price };
           burgerList.push(newBurger);
-          count += 1;
           axios.post(`${process.env.REACT_APP_DATABASE_URL}/burgers.json`, newBurger, {
               headers: {
                 'Content-Type': 'application/json',
             } 
-          }).catch(error => {
-            console.log(error);
+          }).then(res => {
+            console.log(res);
+            if (i === data.length - 1) {
+              this.setState({ isLoading: false });
+              M.toast({html: 'Uploaded Successfully!', classes:"#43a047 green darken-1"});
+            }
+          })
+          .catch(error => {
+            if (i === data.length - 1) {
+              this.setState({ isLoading: false });
+              M.toast({html: 'Uploaded Successfully!', classes:"#43a047 green darken-1"});
+            }
           });
 
         };
-        if (count === data.length) {
-          this.setState({ isLoading: false });
-          M.toast({html: 'Uploaded Successfully!', classes:"#43a047 green darken-1"});
-        }
       });
     };
 
