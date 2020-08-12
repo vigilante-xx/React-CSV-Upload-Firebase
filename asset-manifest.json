@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-CSV-Upload-Firebase/static/css/main.4f3a1c35.chunk.css",
+    "main.js": "/React-CSV-Upload-Firebase/static/js/main.ed06ca11.chunk.js",
+    "main.js.map": "/React-CSV-Upload-Firebase/static/js/main.ed06ca11.chunk.js.map",
+    "runtime-main.js": "/React-CSV-Upload-Firebase/static/js/runtime-main.4a7e5fe2.js",
+    "runtime-main.js.map": "/React-CSV-Upload-Firebase/static/js/runtime-main.4a7e5fe2.js.map",
+    "static/js/2.8c913083.chunk.js": "/React-CSV-Upload-Firebase/static/js/2.8c913083.chunk.js",
+    "static/js/2.8c913083.chunk.js.map": "/React-CSV-Upload-Firebase/static/js/2.8c913083.chunk.js.map",
+    "index.html": "/React-CSV-Upload-Firebase/index.html",
+    "precache-manifest.97210c1ef7ce7fdfca5614084b102e8f.js": "/React-CSV-Upload-Firebase/precache-manifest.97210c1ef7ce7fdfca5614084b102e8f.js",
+    "service-worker.js": "/React-CSV-Upload-Firebase/service-worker.js",
+    "static/css/main.4f3a1c35.chunk.css.map": "/React-CSV-Upload-Firebase/static/css/main.4f3a1c35.chunk.css.map",
+    "static/js/2.8c913083.chunk.js.LICENSE.txt": "/React-CSV-Upload-Firebase/static/js/2.8c913083.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a7e5fe2.js",
+    "static/js/2.8c913083.chunk.js",
+    "static/css/main.4f3a1c35.chunk.css",
+    "static/js/main.ed06ca11.chunk.js"
+  ]
+}
